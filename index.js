@@ -17,7 +17,7 @@ webSocket.on("connection", wsClient => {
             } else {
                 var messageInfo = messageData.toString().split("|")
                 Logger.logInfo("Routing message " + messageInfo[1] + " to " + messageInfo[0] + ".")
-                // setTimeout(() => { clients.connections[messageInfo[0]].send(messageInfo[1]) }, 1500)
+                setTimeout(() => { clients.connections[messageInfo[0]].send(messageInfo[1]) }, 1500)
                 // Uncomment the line above if you want a delay between messages
             }
         }
