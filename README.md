@@ -2,15 +2,10 @@
 This is a websocket that interfaces with computercraft and uses tts to anounce messages
 # Usage
 First you need to install the npm packages, say and ws.
-<br>
 You also need to allow access to local ips in computercraft, refer to this link. 
-<br>
 https://tweaked.cc/guide/local_ips.html 
-<br>
 Then run the index.js with node.js
-<br>
 To connect computers you need to have it send an id. The id can be anything.
-<br>
 Here is some example code for a computer
 ```lua
 ws = http.websocket("ws://localhost:8001")
